@@ -1,0 +1,17 @@
+body, html{
+	height: 90%;
+	margin: 30px;
+	overflow: hidden;
+}
+.mt-container{
+	height: 100%;
+	width: 800px;
+	margin: auto;
+}
+
+/*重写插件内部样式*/
+.rong-live-msg-list {
+  background: url(./bg.jpg) no-repeat;
+  background-size: cover;
+}
+/* 其他按需修改 */

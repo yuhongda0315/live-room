@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rong-Live</title>
+	
+	<!-- 必须引入 开始位置-->
+	<link rel="stylesheet" href="./css/rong-live.css">
+	<script src="./lib/RongIMLib.js"></script>
+	<script src="//cdn.ronghub.com/RongEmoji-2.2.6.js"></script> 
+	
+	<script src="./src/utils.js" _group="live"></script>
+	<script src="./src/service.js" _group="live"></script>
+	<script src="./src/live-sdk.js" _group="live"></script>
+	<script src="./src/room.js" _group="live"></script>
+	<!-- 必须引入 结束位置-->
+
+</head>
+<body>
+	<div class="mt-container" id="mt-container"></div>
+</body>
+
+<script>
+	var el = document.getElementById('mt-container');
+	var config = {
+		el: el,
+		appkey: 'e0x9wycfx7flq',
+		roomId: 'testChatRoomId',
+		historyCount: 20,
+		limit: {
+			max: 200
+		}
+	};
+	LiveRoom.init(config);
+</script>
+</html>
